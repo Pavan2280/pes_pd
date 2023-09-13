@@ -15,7 +15,7 @@ The QFN-48 package typically consists of 48 pins arranged in a square or rectang
 
 ![QFN-Package](https://github.com/Pavan2280/pes_pd/assets/131603225/f0d98e95-8f05-4d8a-af1b-51b63c15bb1a)
 
-# Chip
+## Chip
 The chip is centrally positioned within the package, as illustrated in the image below, depicting the method of connection between the chip and the package.
 
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/a4bf87fa-257d-46e1-93e8-1bd83656d67c)
