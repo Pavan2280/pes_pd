@@ -51,7 +51,7 @@ RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series o
 
 # Labs
 + Task 1: Invoking OpenLane
-Step 1: Navigate to the OpenLane Working Directory
+- Step 1: Navigate to the OpenLane Working Directory
 Open your terminal and navigate to the OpenLane working directory on your Desktop.
 ```
 cd Desktop/work/tools/openlane_working_dir/
