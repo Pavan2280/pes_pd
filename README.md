@@ -49,7 +49,9 @@ RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series o
 # Openlane ASIC Flow
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/24e63c09-da0d-4da6-943c-f54d6abbda85)
 
-# Lab - Task 1: Invoking OpenLane
+# Labs
+
+#### Task 1: Invoking OpenLane
 
 Step 1: Navigate to the OpenLane Working Directory
 Open your terminal and navigate to the OpenLane working directory on your Desktop.
