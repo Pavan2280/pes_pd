@@ -1,5 +1,7 @@
 # Physical Design Flow 
-This repository provides a comprehensive guide to navigate the entire physical design flow, starting from scratch - Guided by Kunal Ghosh
+This repository provides a comprehensive guide to navigate the entire physical design flow, starting from scratch.
+
+# Physical Design Flow Assignments - Guided by Kunal Ghosh
 
 # Table of contents
 <details>
