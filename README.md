@@ -27,7 +27,16 @@ The chip is centrally positioned within the package, as illustrated in the image
 - IP's
 
 #### Pads
+Pads serve as conduits for transmitting signals both into and out of a chip, facilitating bidirectional communication between the chip's internal and external components.
 
-![image](https://github.com/Pavan2280/pes_pd/assets/131603225/5387df7c-88bb-41ed-b630-010aaaeefc59)
+#### Core 
+The core essentially serves as the central region where various digital logic components, including AND gates, OR gates, multiplexers (mux), and other types of logic elements, are located.
+
+#### Die
+It essentially defines the dimensions or physical size of the chip.
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/00e971c8-4bf4-4b93-8335-5fb20850fbf6)
+
+
 
 </details>
