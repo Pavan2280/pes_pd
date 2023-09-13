@@ -51,7 +51,7 @@ RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series o
 
 # Labs
 
-#### Task 1: Invoking OpenLane
+#### Task 1 - Invoking OpenLane
 
 Step 1: Navigate to the OpenLane Working Directory
 Open your terminal and navigate to the OpenLane working directory on your Desktop.
@@ -89,4 +89,37 @@ package require openlane 0.9
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/98126aa2-a5f8-4b07-9f33-7069917e778c)
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/d0d7f989-75d0-4524-acb3-de1547bb0f12)
 If you can achieve these results, then you have now successfully invoked OpenLane and are prepared to use it for your projects.
+
+#### Task 2 - Using Openlane
+
+Step 1: Navigate to the OpenLane Working Directory 
+Enter these commands
+```
+cd designs/
+ls
+cd picorv32a
+ls
+ls -ltr
+```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/67e3d11e-7406-4636-a6a4-adf12b01be9a)
+To view `config.tcl` file enter this command
+```
+vim config.tcl
+```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/058d34cc-6546-466f-909c-60601e0ae338)
+
+Step 2: Invoke OpenLane and enter these commands
+```
+prep -design picorv32a
+```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/e73c709e-3f63-4c73-8118-a76bc4b12d9e)
+
+Step 3: Invoke OpenLane and enter these commands
+```
+run_synthesis
+```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/25f59d56-2ffe-4c38-94e7-404a8b9a6092)
+Now our aim is to find Ratio (No of D-flip flops to NO of cells)
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/60b0b776-f6de-47b9-98f8-b749bb3cba04)
+
 </details>
