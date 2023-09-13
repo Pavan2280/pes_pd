@@ -7,5 +7,5 @@ This repository provides a comprehensive guide to navigate the entire physical d
 <br>
 The QFN-48 (Quad Flat No-Lead 48) package is a widely used integrated circuit (IC) package in the electronics industry. 
 It belongs to the family of leadless surface-mount packages designed to maximize space efficiency on printed circuit boards (PCBs) while providing excellent thermal performance and electrical connectivity.
-!(https://github.com/Pavan2280/pes_pd/assets/131603225/4bb4ba21-5ff0-4de3-bf3b-f9a578d2d9fc)
+![QFN-Package](https://github.com/Pavan2280/pes_pd/assets/131603225/8dc6725c-a280-413e-a0fd-7d2d789d1cfe)
 </details>
