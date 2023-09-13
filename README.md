@@ -33,6 +33,9 @@ The chip is centrally positioned within the package, as illustrated in the image
 PDK stands for "Process Design Kit." It is a set of tools, libraries, and documentation used in the semiconductor industry for designing and verifying the manufacturing process of integrated circuits (ICs) or microchips. PDKs are essential for semiconductor companies, foundries, and design houses to create and optimize semiconductor devices.
 
 # RTL  to GDS Flow
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/79f2b9dc-ad16-447e-924d-12d5503589c6)
+
 RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series of steps and processes used in the semiconductor industry to transform a high-level hardware description of an integrated circuit (IC) or microchip into a physical layout that can be fabricated in a semiconductor foundry.
 
 - Synthesis : Involves transforming the RTL code into a gate-level representation, optimizing the design to enhance area, power, and timing characteristics, ultimately generating a gate-level netlist.
@@ -43,7 +46,6 @@ RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series o
 - Routing : Perform global and detailed routing to create the physical connections between standard cells, optimize routing for signal integrity and manufacturability.
 - Sign-off : Sign-off represents the final checks and confirmations that the design meets all the specified requirements and is ready for fabrication. 
 
-![image](https://github.com/Pavan2280/pes_pd/assets/131603225/79f2b9dc-ad16-447e-924d-12d5503589c6)
 
 # Openlane ASIC Flow
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/24e63c09-da0d-4da6-943c-f54d6abbda85)
