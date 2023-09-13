@@ -36,15 +36,15 @@ PDK stands for "Process Design Kit." It is a set of tools, libraries, and docume
 
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/79f2b9dc-ad16-447e-924d-12d5503589c6)
 
-RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series of steps and processes used in the semiconductor industry to transform a high-level hardware description of an integrated circuit (IC) or microchip into a physical layout that can be fabricated in a semiconductor foundry.
+RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series of steps and processes used in the semiconductor industry to transform a high-level hardware description of an integrated circuit (IC) or microchip into a physical layout that can be fabricated in a semiconductor foundry.Here's a overview of the RTL to GDS flow:
 
-- Synthesis : Involves transforming the RTL code into a gate-level representation, optimizing the design to enhance area, power, and timing characteristics, ultimately generating a gate-level netlist.
-- Floor Planning : In the process of floor planning and power planning, we establish a comprehensive floorplan that meticulously dictates the arrangement of diverse blocks and macros across the chip while taking into account the essential aspects of power distribution and signal routing requirements.
-- Power Planning :  It involves the careful management and distribution of power throughout the chip to ensure that it operates reliably, efficiently, and within specified power constraints.
-- Placement : It involves determining the precise location of each standard cell or logic element within the chip's floorplan.
-- Clock Tree Synthesis : Its primary purpose is to create an optimized clock distribution network that ensures reliable and efficient clock signal distribution throughout the chip.
-- Routing : Perform global and detailed routing to create the physical connections between standard cells, optimize routing for signal integrity and manufacturability.
-- Sign-off : Sign-off represents the final checks and confirmations that the design meets all the specified requirements and is ready for fabrication. 
+- **Synthesis** : Involves transforming the RTL code into a gate-level representation, optimizing the design to enhance area, power, and timing characteristics, ultimately generating a gate-level netlist.
+- **Floor Planning** : In the process of floor planning and power planning, we establish a comprehensive floorplan that meticulously dictates the arrangement of diverse blocks and macros across the chip while taking into account the essential aspects of power distribution and signal routing requirements.
+- **Power Planning** :  It involves the careful management and distribution of power throughout the chip to ensure that it operates reliably, efficiently, and within specified power constraints.
+- **Placement** : It involves determining the precise location of each standard cell or logic element within the chip's floorplan.
+- **Clock Tree Synthesis** : Its primary purpose is to create an optimized clock distribution network that ensures reliable and efficient clock signal distribution throughout the chip.
+- **Routing** : Perform global and detailed routing to create the physical connections between standard cells, optimize routing for signal integrity and manufacturability.
+- **Sign-off** : Sign-off represents the final checks and confirmations that the design meets all the specified requirements and is ready for fabrication. 
 
 
 # Openlane ASIC Flow
