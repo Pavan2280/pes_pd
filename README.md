@@ -29,5 +29,8 @@ The chip is centrally positioned within the package, as illustrated in the image
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/00e971c8-4bf4-4b93-8335-5fb20850fbf6)
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/1fb78871-f8d4-4e87-9d14-1f15caf832ed)
 
+# What are PDK's
+PDK stands for "Process Design Kit." It is a set of tools, libraries, and documentation used in the semiconductor industry for designing and verifying the manufacturing process of integrated circuits (ICs) or microchips. PDKs are essential for semiconductor companies, foundries, and design houses to create and optimize semiconductor devices.
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/24e63c09-da0d-4da6-943c-f54d6abbda85)
 
 </details>
