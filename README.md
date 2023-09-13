@@ -51,16 +51,19 @@ RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series o
 
 # Labs
 # Task 1: Invoking OpenLane
+
 Step 1: Navigate to the OpenLane Working Directory
 Open your terminal and navigate to the OpenLane working directory on your Desktop.
 ```
 cd Desktop/work/tools/openlane_working_dir/
 ```
+
 Step 2: Check Directory Contents
 List the contents of the directory to ensure you are in the correct location.
 ```
 ls -ltr
 ```
+
 Step 3: Enter the OpenLane Docker Environment
 To work with OpenLane, you will need to enter the Docker environment. Use the following command:
 ```
@@ -68,6 +71,7 @@ cd openlane
 docker
 ```
 After running this command, you will see a new prompt, which should look something like `bash-4.2$`. This indicates that you are now inside the Docker environment.
+
 Step 4: Invoke OpenLane
 To invoke OpenLane, run the following commands
 ```
@@ -75,6 +79,7 @@ ls
 ./flow.tcl -interactive
 ```
 After executing these commands, you will see a new prompt, which should now be `%`.
+
 Step 5: Load OpenLane Package
 If you want to use a specific version of the OpenLane package, you can load it using the following command.
 ```
