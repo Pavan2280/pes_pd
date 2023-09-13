@@ -74,7 +74,7 @@ To invoke OpenLane, run the following commands
 ls
 ./flow.tcl -interactive
 ```
-After executing these commands, you will see a new prompt, which should now be `%`. This means you have successfully invoked OpenLane.
+After executing these commands, you will see a new prompt, which should now be `%`.
 Step 5: Load OpenLane Package
 If you want to use a specific version of the OpenLane package, you can load it using the following command.
 ```
