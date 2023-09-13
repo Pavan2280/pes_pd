@@ -21,10 +21,10 @@ The chip is centrally positioned within the package, as illustrated in the image
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/a4bf87fa-257d-46e1-93e8-1bd83656d67c)
 
 # Components of Chip
-- Pads : Pads serve as conduits for transmitting signals both into and out of a chip, facilitating bidirectional communication between the chip's internal and external components.
-- Core : The core essentially serves as the central region where various digital logic components, including AND gates, OR gates, multiplexers (mux), and other types of logic elements, are located.
-- Die : It essentially defines the dimensions or physical size of the chip.
-- IP's : IP refers to pre-designed and pre-verified functional blocks or modules that can be integrated into a semiconductor chip's design. These blocks typically encompass a wide range of functions, such as processors, memory, communication interfaces, and specialized functions.
+- **Pads** : Pads serve as conduits for transmitting signals both into and out of a chip, facilitating bidirectional communication between the chip's internal and external components.
+- **Core** : The core essentially serves as the central region where various digital logic components, including AND gates, OR gates, multiplexers (mux), and other types of logic elements, are located.
+- **Die** : It essentially defines the dimensions or physical size of the chip.
+- **IP's** : Intellectual Property known as IP refers to pre-designed and pre-verified functional blocks or modules that can be integrated into a semiconductor chip's design. These blocks typically encompass a wide range of functions, such as processors, memory, communication interfaces, and specialized functions.
 
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/00e971c8-4bf4-4b93-8335-5fb20850fbf6)
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/1fb78871-f8d4-4e87-9d14-1f15caf832ed)
