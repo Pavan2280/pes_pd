@@ -119,7 +119,7 @@ Step 3: Invoke OpenLane and enter these commands
 run_synthesis
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/25f59d56-2ffe-4c38-94e7-404a8b9a6092)
-Now our aim is to find Ratio (No of D-flip flops to NO of cells)
+Now our aim is to find Ratio (Number of D-flip flops to Number of cells)
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/60b0b776-f6de-47b9-98f8-b749bb3cba04)
 
 </details>
