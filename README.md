@@ -21,10 +21,10 @@ The chip is centrally positioned within the package, as illustrated in the image
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/a4bf87fa-257d-46e1-93e8-1bd83656d67c)
 
 # Components of Chip
->> Pads
->> Core
->> Die
->> IP's
+- Pads
+- Core
+- Die
+- IP's
 
 #### Pads
 
