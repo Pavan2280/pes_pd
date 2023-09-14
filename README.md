@@ -256,7 +256,6 @@ The characterization process involves the following steps:
 6. **Apply Input or Stimulus**: Provide input signals or stimuli to the cell. This can include various test vectors or patterns that are used to evaluate the cell's response under different conditions.
 7. **Provide Necessary Simulation Commands**: Define the simulation commands required to run the characterization process. These commands may include simulation settings, simulation types (e.g., transient, static timing analysis), and other parameters to control the simulation environment.
 
-
 # Timing threshold definitions
 
 1) **slew_low_rise_thr**: This threshold is set at 20% above the lowest power supply voltage when the signal is transitioning from low to high (rising).
@@ -276,6 +275,27 @@ Transition Time = time(slew_low_rise_thr) - time(slew_high_rise_thr)
 <details>
 <summary>Day 3 - Design library cell</summary>
 <br>
+
+# CMOS Inverter Fabrication Process
+
+## Overview
+
+A CMOS (Complementary Metal-Oxide-Semiconductor) inverter is a fundamental building block in digital integrated circuits. It consists of a p-type metal-oxide-semiconductor (PMOS) transistor and an n-type metal-oxide-semiconductor (NMOS) transistor connected in series. Here's a simplified overview of the fabrication process for a CMOS inverter:
+
+## Fabrication Steps
+
+1) Substrate Preparation : Start with a high-purity silicon substrate, typically n-doped.
+2) Oxidation : Create an insulating silicon dioxide (SiO2) layer on the substrate through oxidation.
+3) Photolithography : Apply a photoresist material, expose it to UV light through a mask, and develop it to define transistor areas.
+4) Ion Implantation (n-well and p-well) : Create n-type (NMOS) and p-type (PMOS) regions through selective ion implantation.
+5) Gate Oxide Formation : Grow or deposit a thin layer of gate oxide (SiO2) to insulate the gate electrode from the silicon channel.
+6) Polysilicon Deposition : Deposit and pattern polysilicon to create gate electrodes that control current flow.
+7) Doping of Gate Electrodes : Dope gate electrodes for desired conductivity (boron for PMOS, phosphorus/arsenic for NMOS).
+8) Source and Drain Formation : Create heavily doped source and drain regions for both PMOS and NMOS transistors.
+9) Metal Layer Deposition : Deposit and pattern a metal layer (e.g., aluminum or copper) for interconnections.
+10) Passivation Layer : Deposit a passivation layer (usually silicon dioxide) to protect and insulate underlying layers.
+11) Contact Holes : Etch contact holes through the passivation layer for metal contacts to transistors.
+12) Final Testing and Packaging : Test the CMOS inverter to ensure it operates correctly, and then integrate multiple inverters and additional components onto a single chip for electronic device applications.
 
 </details>
 
