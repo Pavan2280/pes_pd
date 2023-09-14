@@ -183,4 +183,37 @@ Step 3: To create a floorplan using OpenLane, please execute the following comma
 run_floorplan
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/fbee5100-d335-40ea-a290-9ff9bde13d14)
+
+The point (0, 0) within the DIE AREA signifies the top-left corner's coordinates, while (660.685, 671.405) designates the bottom-right corner of the die in micrometers.
+
+Step 4: To visualize the floorplan layout, employ the following command.
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/59dbab09-a76f-40c0-90bc-dac2c02e456c)
+
+#### Task 2 - Library Binding and Placement
+
+1) Bind the netlist with physical cells - Binding the netlist with physical cells involves mapping logical components onto specific physical cells in a technology library for chip design.
+2) Optimize Placement - Optimizing placement involves strategically arranging physical cells on a chip's layout to minimize area, meet timing constraints, and enhance overall performance.
+
+Step 1: To visualize the placement, employ the following command.
+```
+run_placement
+```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/fa165aad-5c32-4cdc-9dc9-53a7e2c2de93)
+
+# Cell Design Flow
+
+
+# Timing threshold definitions
+
+**slew_low_rise_thr**: This threshold is set at 20% above the lowest power supply voltage when the signal is transitioning from low to high (rising).
+**slew_high_rise_thr**: This threshold is set at 20% below the highest power supply voltage when the signal is transitioning from low to high (rising).
+**slew_low_fall_thr**: This threshold is set at 20% above the lowest power supply voltage when the signal is transitioning from high to low (falling).
+**slew_high_fall_thr**: This threshold is set at 20% below the highest power supply voltage when the signal is transitioning from high to low (falling).
+**in_rise_thr**: This threshold is placed at the point where the input signal is halfway through its transition from low to high during a rising edge.
+**in_fall_thr**: This threshold is placed at the point where the input signal is halfway through its transition from high to low during a falling edge.
+**out_rise_thr**: This threshold is positioned at the point where the output signal is halfway through its transition from low to high during a rising edge.
+**out_fall_thr**: This threshold is positioned at the point where the output signal is halfway through its transition from high to low during a falling edge.
 </details>
