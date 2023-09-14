@@ -221,3 +221,16 @@ Propagation Delay = time(out_thr) - time(in_thr)
 11) **Transition Time**: This is the time it takes for a signal to transition from a low to high state (rising edge) or from a high to low state (falling edge) within a specific voltage range. In this case, you are calculating the transition time from the high threshold (slew_high_rise_thr) to the low threshold (slew_low_rise_thr) during a rising edge.
 Transition Time = time(slew_low_rise_thr) - time(slew_high_rise_thr)
 </details>
+
+<details>
+<summary>Day 3 - Design library cell</summary>
+<br>
+
+</details>
+
+
+<details>
+<summary>Day 4 - Pre-Layout timing analysis and importance of good clock tree</summary>
+<br>
+
+</details>
