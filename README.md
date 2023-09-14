@@ -130,7 +130,7 @@ package require openlane 0.9
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/d0d7f989-75d0-4524-acb3-de1547bb0f12)
 If you can achieve these results, then you have now successfully invoked OpenLane and are prepared to use it for your projects.
 
-#### Task 2 - Using Openlane
+#### Task 2 - Designs presnt in openalne and Heirarchy in a Design
 
 Step 1: Navigate to the OpenLane Working Directory 
 Enter these commands
