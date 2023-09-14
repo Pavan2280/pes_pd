@@ -216,6 +216,8 @@ run_placement
 6) **in_fall_thr**: This threshold is placed at the point where the input signal is halfway through its transition from high to low during a falling edge.
 7) **out_rise_thr**: This threshold is positioned at the point where the output signal is halfway through its transition from low to high during a rising edge.
 8) **out_fall_thr**: This threshold is positioned at the point where the output signal is halfway through its transition from high to low during a falling edge.
-9) **Propagation Delay**: This is the time it takes for a signal to propagate from an input threshold (in_thr) to an output threshold (out_thr). It represents the time it takes for a change at the input to affect the output. Formula: Propagation Delay = time(out_thr) - time(in_thr)
-10) **Transition Time**: This is the time it takes for a signal to transition from a low to high state (rising edge) or from a high to low state (falling edge) within a specific voltage range. In this case, you are calculating the transition time from the high threshold (slew_high_rise_thr) to the low threshold (slew_low_rise_thr) during a rising edge.Formula: Transition Time = time(slew_low_rise_thr) - time(slew_high_rise_thr)
+9) **Propagation Delay**: This is the time it takes for a signal to propagate from an input threshold (in_thr) to an output threshold (out_thr). It represents the time it takes for a change at the input to affect the output.
+Formula: Propagation Delay = time(out_thr) - time(in_thr)
+11) **Transition Time**: This is the time it takes for a signal to transition from a low to high state (rising edge) or from a high to low state (falling edge) within a specific voltage range. In this case, you are calculating the transition time from the high threshold (slew_high_rise_thr) to the low threshold (slew_low_rise_thr) during a rising edge.
+Formula: Transition Time = time(slew_low_rise_thr) - time(slew_high_rise_thr)
 </details>
