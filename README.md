@@ -46,9 +46,49 @@ RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series o
 - **Routing** : Perform global and detailed routing to create the physical connections between standard cells, optimize routing for signal integrity and manufacturability.
 - **Sign-off** : Sign-off represents the final checks and confirmations that the design meets all the specified requirements and is ready for fabrication. 
 
-# Openlane ASIC Flow
+# Openlane ASIC Design Flow
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/24e63c09-da0d-4da6-943c-f54d6abbda85)
 
+#### Design Stages
+
+1) **Synthesis**
+   a) **yosys** - Yosys performs RTL synthesis, converting high-level RTL descriptions into gate-level netlists.
+   b) **abc** - ABC is used for further optimization and technology mapping to enhance the gate-level design.
+   c) **OpenSTA** - OpenSTA conducts static timing analysis to verify if the synthesized design meets timing constraints in the OpenLane flow.
+
+2) **Floorplan & PND**
+   a) **init_fp (Initial Floorplan)** - Floorplanning involves determining the initial placement and arrangement of various functional blocks or cells within the chip's       
+   layout area.
+   b) **ioplacer** - ioplacer is a tool used in the physical design process to place Input/Output (I/O) pads or pins on the chip's boundary.
+   c) **pdn** - The PDN is responsible for distributing power (supply voltage) and ground (reference voltage) throughout the chip, ensuring that all components receive the       necessary power supply and maintain stable electrical operation.
+   d) **tapcell** - A "tapcell" is a special type of cell used in digital integrated circuit design, particularly in standard cell libraries.It is typically used to create 
+   tap connections for the bulk terminals in digital CMOS (Complementary Metal-Oxide-Semiconductor) designs.
+
+3) **Placement**
+   a) **Replace** - RePlace is a tool used in the OpenLane flow for cell placement optimization.It focuses on optimizing the placement of standard cells within the chip's   
+   layout to achieve better area utilization, timing, and power efficiency.
+   b) **Resizer** - Resizer is a tool employed during the physical design process to perform cell resizing and optimization.
+   c) **OpenDP (Open Detailed Placement)** - OpenDP, or Open Detailed Placement, is a detailed placement tool used in OpenLane.It is responsible for the fine-grained 
+   placement of cells, ensuring that they are precisely positioned within rows and tracks while adhering to design constraints and achieving optimal utilization of the chip's 
+   layout area.
+   d) **OpenPhysyn (Open Physical Synthesis)** - OpenPhysyn is a tool within OpenLane that performs physical synthesis tasks.It optimizes the logical and physical aspects of 
+   the design simultaneously, improving the placement, power, area, and timing by considering both logic and physical information during the optimization process.
+
+4) **CTS**
+   a) **TritonCTS** - TritonCTS generates a clock distribution network.
+
+5) **Routing**
+   a) **FastRoute** - FastRoute is a global routing tool used in the physical design stage of ASIC chip design.
+   b) **TritonRoute** - TritonRoute is a detailed or global routing tool used in the later stages of ASIC chip design, following placement and initial global routing.
+   
+6) **GDSII Generation**
+   a) **Magic** - Magic is primarily a layout tool used for creating and editing IC layouts, and it is often used for digital CMOS design.
+   b) **KLayout** - KLayout is primarily used for viewing, editing, and analyzing IC layouts but is not a layout creation tool like Magic.
+   
+8) **Checks**
+   a) **CVC** - CVC is a tool primarily used for verification and debugging of digital designs.
+   b) **Netgen** - Netgen is an open-source digital netlist comparison and LVS (Layout vs. Schematic) tool.
+ 
 # Labs
 
 #### Task 1 - Invoking OpenLane
