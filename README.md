@@ -10,9 +10,9 @@ This repository provides a comprehensive guide to navigate the entire physical d
 
 ## Installation Instructions
 
-Please follow these steps to install OpenNAE on your system, whether you are using Windows or Ubuntu.
+Please follow these steps to install Openlane on your system, whether you are using Windows or Ubuntu.
 
-1. **Download the Installation PDF**: Start by downloading the [OpenNAE Installation Guide](link_to_installation_pdf) for detailed instructions.
+1. **Download the Installation PDF**: Start by downloading the [Openlane Installation Guide](link_to_installation_pdf) for detailed instructions.
 
 2. **Choose Your Operating System**:
 
@@ -24,7 +24,7 @@ Please follow these steps to install OpenNAE on your system, whether you are usi
 
 4. **Run the Installation Script**: After following the instructions, you'll need to execute the installation script as specified in the PDF guide.
 
-5. **Verify Installation**: Confirm that OpenLane is correctly installed by running a test command or checking the version.(Check Day 1 content in order to verify installation.)
+5. **Verify Installation**: Confirm that Openlane is correctly installed by running a test command or checking the version.(Check Day 1 content in order to verify installation.)
 
 [link_to_installation_pdf]: https://drive.google.com/drive/folders/1waH794KlrYMaHzZbf1Fr_BIxfMUk4DBk
 
