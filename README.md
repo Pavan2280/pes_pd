@@ -12,7 +12,8 @@ This repository provides a comprehensive guide to navigate the entire physical d
 
 Please follow these steps to install Openlane on your system, whether you are using Windows or Ubuntu.
 
-1. **Download the Installation PDF**: Start by downloading the Openlane Installation PDF file([link_to_installation_pdf)](https://drive.google.com/drive/folders/1waH794KlrYMaHzZbf1Fr_BIxfMUk4DBk) for detailed instructions.
+1. **Download the Installation PDF**: Start by downloading the Openlane Installation PDF file for detailed instructions.
+- [Openlane Installation PDF](https://drive.google.com/drive/folders/1waH794KlrYMaHzZbf1Fr_BIxfMUk4DBk)
 
 2. **Choose Your Operating System**:
 
