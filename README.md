@@ -368,14 +368,15 @@ plot y vs time a
 # Results
 
 1) The trise result is calculated by subtracting the x-coordinates from each other.
+#### trise = 0.062ns
 
 ![trise_diff_x0](https://github.com/Pavan2280/pes_pd/assets/131603225/bc2990cd-f74e-4300-aa84-84d4e1cbd98f)
-trise = 0.062ns
 
 2) Propagation delay is similarly determined, but it involves adjusting the points based on the definition of propagation delay.
+#### tprop = 0.034ns
 
 ![t_prop](https://github.com/Pavan2280/pes_pd/assets/131603225/9e396323-c6ec-4e44-9177-fe326b1a8800)
-tprop = 0.034ns
+
 </details>
 
 <details>
