@@ -305,16 +305,19 @@ Step 1: Open a terminal and run this command
 cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
 magic -T sky130A.tech sky130_inv.mag
 ```
-</details>
-
-# Layout
-
 ![16_1](https://github.com/Pavan2280/pes_pd/assets/131603225/3c180df5-d7d6-4d7e-bfa9-cce0698bb70b)
 
 To select an area in layout, position the cursor near it, press the `s` key, and then enter the `what` command in the tkcon console to determine which area or widget has been selected.
 
 ![18_1](https://github.com/Pavan2280/pes_pd/assets/131603225/a7602338-bebc-4a2d-a7a7-92946b233874)
 
+
+
+
+
+
+
+</details>
 
 <details>
 <summary>Day 4 - Pre-Layout timing analysis and importance of good clock tree</summary>
