@@ -313,11 +313,67 @@ To select an area in layout, position the cursor near it, press the `s` key, and
 
 ![18_1](https://github.com/Pavan2280/pes_pd/assets/131603225/a7602338-bebc-4a2d-a7a7-92946b233874)
 
+#### Task 2 - DRC Check 
 
+To check for DRC Errors, select a region (left click for starting point, right click at end point) and see the DRC column at the top that shows how many DRC errors are present.The Details of DRC Errors will be printed on the console.
 
+![19](https://github.com/Pavan2280/pes_pd/assets/131603225/dc8a1696-299c-4798-9b63-09b9ef08015b)
 
+#### Task 3 - Extracting PEX to SPICE with MAGIC
+Step 1: Enter these commands in the tkcon console.
+```
+pwd
+extract all
+ext2spice cthresh 0 rthresh 0
+ext2spice
+```
+![19(1)](https://github.com/Pavan2280/pes_pd/assets/131603225/e134e634-50df-4f18-8f1f-3121298a14cd)
 
+Step 2:To view `sky130_inv.spice` file enter this command
+```
+vim sky130_inv.spice
+```
 
+![21](https://github.com/Pavan2280/pes_pd/assets/131603225/2581d55a-4795-4f2b-9d29-33af0f7481c9)
+
+# Grid size
+
+![22](https://github.com/Pavan2280/pes_pd/assets/131603225/5b45b753-317a-452b-83e6-b530cb86cc50)
+
+![23](https://github.com/Pavan2280/pes_pd/assets/131603225/f3359e9a-2efd-4c34-b6be-5943ab658c39)
+
+# Modified Spice netlist
+
+#### Task 1 - Make changes to the `sky130_inv.spice`
+
+![final_vim_22](https://github.com/Pavan2280/pes_pd/assets/131603225/c527fcb6-2ad7-464b-b169-f9f0069401d1)
+
+#### Task 2 - Run modified spice netlist
+Step 1: Use this command to run the modified spice netlist
+```
+ngspice sky130_inv.spice
+```
+
+![ngspice](https://github.com/Pavan2280/pes_pd/assets/131603225/1d37848c-f3b5-43da-9410-b18cf466311e)
+
+Step 2: Use this command to run the plot.
+```
+plot y vs time a
+```
+
+![plot](https://github.com/Pavan2280/pes_pd/assets/131603225/db091887-53eb-4460-ba23-eb873177f80f)
+
+![plot_1](https://github.com/Pavan2280/pes_pd/assets/131603225/d69ef1d7-a8fd-4257-9ab0-0b94a845b97e)
+
+# Results
+
+1) The trise result is calculated by subtracting the x-coordinates from each other.
+trise = 0.062ns
+![trise_diff_x0](https://github.com/Pavan2280/pes_pd/assets/131603225/bc2990cd-f74e-4300-aa84-84d4e1cbd98f)
+
+2) Propagation delay is similarly determined, but it involves adjusting the points based on the definition of propagation delay.
+tprop = 0.034ns
+![t_prop](https://github.com/Pavan2280/pes_pd/assets/131603225/9e396323-c6ec-4e44-9177-fe326b1a8800)
 
 </details>
 
