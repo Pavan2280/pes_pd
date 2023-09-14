@@ -297,7 +297,23 @@ A CMOS (Complementary Metal-Oxide-Semiconductor) inverter is a fundamental build
 11) **Contact Holes** : Etch contact holes through the passivation layer for metal contacts to transistors.
 12) **Final Testing and Packaging** : Test the CMOS inverter to ensure it operates correctly, and then integrate multiple inverters and additional components onto a single chip for electronic device applications.
 
+# Labs
+
+#### Task 1 - Creating an Inverter Layout using Magic
+Step 1: Open a terminal and run this command
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+magic -T sky130A.tech sky130_inv.mag
+```
 </details>
+
+# Layout
+
+![16_1](https://github.com/Pavan2280/pes_pd/assets/131603225/3c180df5-d7d6-4d7e-bfa9-cce0698bb70b)
+
+To select an area in layout, position the cursor near it, press the `s` key, and then enter the `what` command in the tkcon console to determine which area or widget has been selected.
+
+![18_1](https://github.com/Pavan2280/pes_pd/assets/131603225/a7602338-bebc-4a2d-a7a7-92946b233874)
 
 
 <details>
