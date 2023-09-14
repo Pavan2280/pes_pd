@@ -208,12 +208,12 @@ run_placement
 
 # Timing threshold definitions
 
-**slew_low_rise_thr**: This threshold is set at 20% above the lowest power supply voltage when the signal is transitioning from low to high (rising).
-**slew_high_rise_thr**: This threshold is set at 20% below the highest power supply voltage when the signal is transitioning from low to high (rising).
-**slew_low_fall_thr**: This threshold is set at 20% above the lowest power supply voltage when the signal is transitioning from high to low (falling).
-**slew_high_fall_thr**: This threshold is set at 20% below the highest power supply voltage when the signal is transitioning from high to low (falling).
-**in_rise_thr**: This threshold is placed at the point where the input signal is halfway through its transition from low to high during a rising edge.
-**in_fall_thr**: This threshold is placed at the point where the input signal is halfway through its transition from high to low during a falling edge.
-**out_rise_thr**: This threshold is positioned at the point where the output signal is halfway through its transition from low to high during a rising edge.
-**out_fall_thr**: This threshold is positioned at the point where the output signal is halfway through its transition from high to low during a falling edge.
+1) **slew_low_rise_thr**: This threshold is set at 20% above the lowest power supply voltage when the signal is transitioning from low to high (rising).
+2) **slew_high_rise_thr**: This threshold is set at 20% below the highest power supply voltage when the signal is transitioning from low to high (rising).
+3) **slew_low_fall_thr**: This threshold is set at 20% above the lowest power supply voltage when the signal is transitioning from high to low (falling).
+4) **slew_high_fall_thr**: This threshold is set at 20% below the highest power supply voltage when the signal is transitioning from high to low (falling).
+5) **in_rise_thr**: This threshold is placed at the point where the input signal is halfway through its transition from low to high during a rising edge.
+6) **in_fall_thr**: This threshold is placed at the point where the input signal is halfway through its transition from high to low during a falling edge.
+7) **out_rise_thr**: This threshold is positioned at the point where the output signal is halfway through its transition from low to high during a rising edge.
+8) **out_fall_thr**: This threshold is positioned at the point where the output signal is halfway through its transition from high to low during a falling edge.
 </details>
