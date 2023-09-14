@@ -47,6 +47,7 @@ RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series o
 - **Sign-off** : Sign-off represents the final checks and confirmations that the design meets all the specified requirements and is ready for fabrication. 
 
 # Openlane ASIC Design Flow
+
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/24e63c09-da0d-4da6-943c-f54d6abbda85)
 
 #### Design Stages
@@ -171,12 +172,15 @@ Now our aim is to find Ratio (Number of D-flip flops to Number of cells)
 
 #### Task 1 - Floorplan
 
-Step 1: Before running floorplan, lets look into the switches available for the floorplan stage
+Step 1: Before running floorplan, lets look into the switches available for the floorplan stage.
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/02148532-a29d-40bd-8754-0ffa2bdbab3d)
 
-Step 2: Please utilize the following command in OpenLane for floorplan.
+Step 2: Make changes in `config.tcl` file for floorplan purpose.
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/f29ca8fd-54c1-43d7-8f31-1751417fa23a)
+
+Step 3: To create a floorplan using OpenLane, please execute the following command.
 ```
 run_floorplan
 ```
-
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/fbee5100-d335-40ea-a290-9ff9bde13d14)
 </details>
