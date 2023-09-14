@@ -52,9 +52,9 @@ RTL to GDS (Register Transfer Level to Graphic Design System) flow is a series o
 #### Design Stages
 
 1) **Synthesis**
-   1. a) **yosys** - Yosys performs RTL synthesis, converting high-level RTL descriptions into gate-level netlists.
-   2. b) **abc** - ABC is used for further optimization and technology mapping to enhance the gate-level design.
-   3. c) **OpenSTA** - OpenSTA conducts static timing analysis to verify if the synthesized design meets timing constraints in the OpenLane flow.
+   1. **yosys** - Yosys performs RTL synthesis, converting high-level RTL descriptions into gate-level netlists.
+   2. **abc** - ABC is used for further optimization and technology mapping to enhance the gate-level design.
+   3. **OpenSTA** - OpenSTA conducts static timing analysis to verify if the synthesized design meets timing constraints in the OpenLane flow.
 
 2) **Floorplan & PND**
    a) **init_fp (Initial Floorplan)** - Floorplanning involves determining the initial placement and arrangement of various functional blocks or cells within the chip's       
