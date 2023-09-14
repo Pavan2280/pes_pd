@@ -329,7 +329,7 @@ ext2spice
 ```
 ![19(1)](https://github.com/Pavan2280/pes_pd/assets/131603225/e134e634-50df-4f18-8f1f-3121298a14cd)
 
-Step 2:To view `sky130_inv.spice` file enter this command
+Step 2: To view `sky130_inv.spice` file enter this command
 ```
 vim sky130_inv.spice
 ```
