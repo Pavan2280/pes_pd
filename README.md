@@ -5,7 +5,7 @@ This repository provides a comprehensive guide to navigate the entire physical d
 
 # Table of contents
 <details>
-<summary>Installation of Openlane</summary>
+<summary>Openlane Installation</summary>
 <br>
 
 ## Installation Instructions
