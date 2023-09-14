@@ -148,18 +148,35 @@ vim config.tcl
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/058d34cc-6546-466f-909c-60601e0ae338)
 
-Step 2: Prepare the design for the flow by using this command
+Step 2: Prepare the workflow design using OpenLane with the following command.
 ```
 prep -design picorv32a
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/e73c709e-3f63-4c73-8118-a76bc4b12d9e)
 
-Step 3: For synthesis use this command
+Step 3: Please utilize the following command in OpenLane for synthesis.
 ```
 run_synthesis
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/25f59d56-2ffe-4c38-94e7-404a8b9a6092)
 Now our aim is to find Ratio (Number of D-flip flops to Number of cells)
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/60b0b776-f6de-47b9-98f8-b749bb3cba04)
+</details>
+
+<details>
+<summary>Day 2 - Good Floorplan vs Bad Floorplan and Introduction to library cells</summary>
+<br>
+
+# Labs
+
+#### Task 1 - Floorplan
+
+Step 1: Before running floorplan, lets look into the switches available for the floorplan stage
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/02148532-a29d-40bd-8754-0ffa2bdbab3d)
+
+Step 2: Please utilize the following command in OpenLane for floorplan.
+```
+run_floorplan
+```
 
 </details>
