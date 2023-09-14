@@ -230,6 +230,32 @@ run_placement
 
 # Cell Design Flow
 
+Cell Design is the process of creating electronic components, known as cells, for use in integrated circuits. It involves three main stages:
+
+1) Inputs: In this phase, designers gather essential information and resources needed for the cell design. This includes Process Design Kits (PDKs), which contain manufacturing details, Design Rule Check (DRC) and Layout vs. Schematic (LVS) rules for ensuring correctness, SPICE models for simulating component behavior, and library specifications. These inputs provide the foundation for the design process.
+
+2) Design: During this stage, designers use the gathered inputs to create the electronic cell. This process typically includes Circuit Design, where the logical and electrical schematic is defined, Layout Design, where the physical arrangement of components is determined while adhering to manufacturing rules, and Characterization, where the cell's performance is analyzed using tools like GUNA. Characterization can involve Timing characterization (evaluating signal timing), Power characterization (assessing power consumption), and Noise characterization (examining electrical noise).
+
+3) Outputs: The design process yields various outputs that are essential for subsequent phases of chip development. These outputs include the Circuit Description Language (CDL), which describes the cell's behavior, the Graphic Data System II (GDSII) layout data used in manufacturing, the Library Exchange Format (LEF) for tool compatibility, an extracted Spice netlist (which considers parasitic elements for accurate simulation), timing data, noise data, power libraries, and a functional description to understand the cell's purpose.
+
+# Standard Cell Characterization Flow
+
+## Introduction
+
+Standard Cell Libraries are a fundamental component in digital integrated circuit design, providing a collection of pre-designed cells with various functionalities. To effectively use these libraries, they must be characterized to generate Liberty files, which are essential for synthesis tools to determine the optimal arrangement of circuit components.The open-source software GUNA is used for characterization
+
+## Characterization Flow
+
+The characterization process involves the following steps:
+
+1. **Link Model File of CMOS**: This step involves linking a model file that defines the properties and behavior of the CMOS (Complementary Metal-Oxide-Semiconductor) technology process being used.
+2. **Specify Process Corner(s)**: Process corners represent different manufacturing variations that impact the performance of the integrated circuits. You must specify one or more process corners for the cell to be characterized. This information helps in understanding how the cell behaves under different conditions.
+3. **Specify Cell Delay and Slew Thresholds Percentages**: Define the desired delay and slew thresholds as percentages. These thresholds are crucial for optimizing circuit performance and determining acceptable signal characteristics.
+4. **Specify Timing and Power Tables**: Create tables that specify timing and power data for the cell under various conditions. These tables are essential for accurate modeling of cell behavior.
+5. **Read the Parasitic Extracted Netlist**: Import the parasitic extracted netlist, which includes information about the interconnections and parasitic elements in the design. This step ensures a more realistic representation of the cell's behavior.
+6. **Apply Input or Stimulus**: Provide input signals or stimuli to the cell. This can include various test vectors or patterns that are used to evaluate the cell's response under different conditions.
+7. **Provide Necessary Simulation Commands**: Define the simulation commands required to run the characterization process. These commands may include simulation settings, simulation types (e.g., transient, static timing analysis), and other parameters to control the simulation environment.
+
 
 # Timing threshold definitions
 
