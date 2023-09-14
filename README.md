@@ -5,6 +5,32 @@ This repository provides a comprehensive guide to navigate the entire physical d
 
 # Table of contents
 <details>
+<summary>Installation of Openlane</summary>
+<br>
+
+## Installation Instructions
+
+Please follow these steps to install OpenNAE on your system, whether you are using Windows or Ubuntu.
+
+1. **Download the Installation PDF**: Start by downloading the [OpenNAE Installation Guide]([link_to_installation_pdf](https://drive.google.com/drive/folders/1waH794KlrYMaHzZbf1Fr_BIxfMUk4DBk)) for detailed instructions.
+
+2. **Choose Your Operating System**:
+
+   - **For Windows**: Follow the instructions outlined in the PDF under the "Windows Installation" section.
+   
+   - **For Ubuntu**: Refer to the "Ubuntu Installation" section in the PDF for step-by-step guidance.
+
+3. **Dependencies**: Ensure you have all the necessary dependencies mentioned in the PDF installed on your system.
+
+4. **Run the Installation Script**: After following the instructions, you'll need to execute the installation script as specified in the PDF guide.
+
+5. **Verify Installation**: Confirm that OpenLane is correctly installed by running a test command or checking the version.(Check Day 1 content in order to verify installation.)
+
+[link_to_installation_pdf]: https://drive.google.com/drive/folders/1waH794KlrYMaHzZbf1Fr_BIxfMUk4DBk
+
+</details>
+  
+<details>
 <summary>Day 1 - Introduction to QFN-48 Package, chip, pads, core, die and IPs</summary>
 <br>
   
