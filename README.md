@@ -148,13 +148,13 @@ vim config.tcl
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/058d34cc-6546-466f-909c-60601e0ae338)
 
-Step 2: Invoke OpenLane and enter these commands
+Step 2: Prepare the design for the flow
 ```
 prep -design picorv32a
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/e73c709e-3f63-4c73-8118-a76bc4b12d9e)
 
-Step 3: Invoke OpenLane and enter these commands
+Step 3: Synthesis
 ```
 run_synthesis
 ```
