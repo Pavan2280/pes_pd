@@ -418,4 +418,48 @@ plot y vs time a
 <summary>Day 4 - Pre-Layout timing analysis and importance of good clock tree</summary>
 <br>
 
+## Introduction
+
+Standard cell placement and routing are essential steps in semiconductor chip design. To optimize these processes, it is vital to follow specific guidelines and best practices. This README provides an overview of key considerations related to LEF information and standard cell placement.
+
+## LEF Information
+
+1) **Technology LEF**: This file contains critical information about metal layers, via configurations, and restricted Design Rule Check (DRC) rules. It defines the foundational aspects of the chip's technology.
+
+2) **Cell LEF**: The Cell LEF file provides an abstract representation of standard cells, encapsulating their characteristics. It is essential for accurate placement and routing of standard cells.
+
+3) **Standard Cell Dimensions** - The width of standard cells should be an odd multiple of the track pitch. This ensures proper alignment with horizontal tracks.Similarly, the height of standard cells should be an odd multiple of the vertical track pitch. This alignment is crucial for efficient routing.
+
+4) **PnR Tool Integration** - PnR tools utilize the abstract view information from the Cell LEF to guide the placement and interconnection of standard cells.
+
+5) **Routing Guides** - Routing guides are generated from the PnR flow and are used in conjunction with LEF information to guide standard cell placement and interconnect routing.
+
+6) **Compliance with Track Pitch** - Ensuring that input and output ports lie precisely on the intersections of vertical and horizontal tracks is critical for efficient routing and manufacturability.
+
+## Benefits
+
+- Adhering to these guidelines for LEF information and standard cell placement offers several benefits:
+  - Efficient interconnect routing.
+  - Reduced Design Rule Check violations.
+  - Improved manufacturability.
+  - Enhanced chip performance.
+
+# Labs
+
+#### Task 1 - Extraction of LEF
+The `track.info` file is `~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130fd_sc_hd/tracks.info`
+
+Step 1: Enter this command to view `track.info` file
+```
+less track.info
+```
+From above image we can say that 1st value indicates the offset and 2nd value indicates the pitch along provided direction.
+
+#### Task 2 -Setting grid values using above file info
+
+Step 1: Enter this command in `tkcon` console.
+```
+grid 0.46um 0.34um 0.23um 0.17um
+```
+
 </details>
