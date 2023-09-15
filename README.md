@@ -23,9 +23,7 @@ Please follow these steps to install Openlane on your system, whether you are us
 
 3. **Dependencies**: Ensure you have all the necessary dependencies mentioned in the PDF installed on your system.
 
-4. **Run the Installation Script**: After following the instructions, you'll need to execute the installation script as specified in the PDF guide.
-
-5. **Verify Installation**: Confirm that Openlane is correctly installed by running a test command or checking the version.(Check Day 1 content in order to verify installation.)
+4. **Verify Installation**: Confirm that Openlane is correctly installed by running a test command or checking the version.(Check Day 1 content in order to verify installation.)
 
 </details>
   
