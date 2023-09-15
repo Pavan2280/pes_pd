@@ -271,7 +271,7 @@ Transition Time = time(slew_low_rise_thr) - time(slew_high_rise_thr)
 </details>
 
 <details>
-<summary>Day 3 - Design library cell</summary>
+<summary>Day 3 - Design library cell using Magic Layout and ngspice characterization</summary>
 <br>
 
 # CMOS Inverter Fabrication Process
