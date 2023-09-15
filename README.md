@@ -437,8 +437,8 @@ Standard cell placement and routing are essential steps in semiconductor chip de
 6) **Compliance with Track Pitch** - Ensuring that input and output ports lie precisely on the intersections of vertical and horizontal tracks is critical for efficient routing and manufacturability.
 
 ## Benefits
-
-- Adhering to these guidelines for LEF information and standard cell placement offers several benefits:
+  
+  - Adhering to these guidelines for LEF information and standard cell placement offers several benefits:
   - Efficient interconnect routing.
   - Reduced Design Rule Check violations.
   - Improved manufacturability.
