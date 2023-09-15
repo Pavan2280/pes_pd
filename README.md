@@ -278,8 +278,38 @@ Transition Time = time(slew_low_rise_thr) - time(slew_high_rise_thr)
 
 #### Task 1 - CMOS inverter ngspice simulations
 
+`cmos_inverter.cir` 
+```
+*** MODEL DESCRIPTIONS ***
+*** NETLIST DESCRIPTION ***
+M1 out in vdd vdd pmos W=0.375u L=0.25u
+M2 out in 0 0 nmos W=0.375u L=0.25u
 
+cload out 0 10f
 
+Vdd vdd 0 2.5
+Vin in 0 2.5
+*** SIMULATION Commands ***
+
+.op
+.dc Vin 0 2.5 0.05
+*** include tsmc_025um_model.mod ***
+.LIB "tsmc_025um_models.mod" CMOS_MODELS
+.end
+```
+
+Step 1: For SPICE Simulation steps enter these commands.
+```
+cd <folder where the .cir file is present>
+source CMOS_INVERTER.cir
+run
+setplot
+dc1
+display
+plot out vs in
+```
+
+Take note of the circuit's output; it should exhibit symmetry, meaning that the threshold voltage should align precisely with Vdd/2. If this balance is not achieved, consider adjusting the PMOS transistor width and rerunning the simulation. The switching threshold (Vm), where Vin equals Vout, plays a pivotal role in defining the robustness of a CMOS circuit.
 
 # CMOS Inverter Fabrication Process
 
