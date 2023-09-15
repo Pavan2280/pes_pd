@@ -447,7 +447,7 @@ Standard cell placement and routing are essential steps in semiconductor chip de
 # Labs
 
 #### Task 1 - Extraction of LEF
-The `track.info` file is `~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130fd_sc_hd/tracks.info`
+The `track.info` file is present in this direcotory `~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130fd_sc_hd/tracks.info`
 
 Step 1: Enter this command to view `track.info` file
 ```
