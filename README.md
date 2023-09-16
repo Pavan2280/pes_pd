@@ -488,7 +488,7 @@ From the above pic, its confirmed that the pins A and Y are at the intersection 
 
 # LEF Generation
 
-#### Task 1 -  save the modified layout 
+#### Task 1 - Layout modification
 
 Step 1: Enter these commands in console
 ```
@@ -508,12 +508,16 @@ lef write
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/98435750-d31d-4b78-b6b4-21715b2e9aa0)
 
-We can view out lef file by using this command.
+#### Task 2 - Plug the generated lef file into PICORV32a
+
+Step 1: We can view out lef file by using this command.
 ```
 vim sky130_vsdinv.lef
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/fbc52f21-2370-4a01-898e-e80cbedde2e3)
 
+Step 2: Modify the `config.tcl` file to specify the usage of these libraries and the LEF file.
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/cb21870f-d3d4-43dd-9e1d-92df8e3a0c20)
 
 [Back to Top](#top)
 </details>
