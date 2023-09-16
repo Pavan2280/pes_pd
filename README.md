@@ -508,6 +508,12 @@ lef write
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/98435750-d31d-4b78-b6b4-21715b2e9aa0)
 
+We can view out lef file by using this command.
+```
+vim sky130_vsdinv.lef
+```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/fbc52f21-2370-4a01-898e-e80cbedde2e3)
+
 
 [Back to Top](#top)
 </details>
