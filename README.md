@@ -466,6 +466,8 @@ Step 1: Enter this command to view `track.info` file
 ```
 less track.info
 ```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/8988a46a-a2b7-4575-90b2-44e05e6ed64f)
+
 From above image we can say that 1st value indicates the offset and 2nd value indicates the pitch along provided direction.
 
 #### Task 2 -Setting grid values using above file info
