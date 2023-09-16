@@ -545,7 +545,26 @@ cp sky130_fd_sc_hd__* /home/vsduser/Desktop/work/tools/openlane_working_dir/desi
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/310e2651-49df-4024-907a-fde826ad22d1)
 
 Step 4: Modify the `config.tcl` file to specify the usage of these libraries and the LEF file.
-![image](https://github.com/Pavan2280/pes_pd/assets/131603225/cb21870f-d3d4-43dd-9e1d-92df8e3a0c20)
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/d412e53e-bd62-4ca9-af23-02fccd22a748)
+
+Step 5: Enter these commands to invoke openlane.
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/
+docker
+./flow.tcl -interactive
+```
+
+Step 6: Make sure the lef file is added.
+```
+package require openlane 0.9
+prep -design picorv32a -tag 16-09_09-57 -overwrite
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+run_synthesis
+```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/e7374ed4-c713-4a59-bda1-9aa91a2efe36)
+
 
 [Back to Top](#top)
 </details>
