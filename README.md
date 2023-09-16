@@ -473,7 +473,7 @@ less track.info
 
 From above image we can say that 1st value indicates the offset and 2nd value indicates the pitch along provided direction.
 
-#### Task 2 -Setting grid values using above file info
+#### Task 2 - Setting grid values using above file info
 
 Step 1: Enter this command in `tkcon` console.
 ```
@@ -484,8 +484,29 @@ grid 0.46um 0.34um 0.23um 0.17um
 Layout view after setting grid info
 ![d33](https://github.com/Pavan2280/pes_pd/assets/131603225/db6e28a3-a491-43e1-b9ed-fd4f77140dbc)
 
-From the above pic, its confirmed that the pins A and Y are at the intersection of X and Y tracks. So the first condition is met.
-The PR boundary is taking 3 grids on width and 9 grids on height which says that the 2nd condition is also met
+From the above pic, its confirmed that the pins A and Y are at the intersection of X and Y tracks. So the first condition is met and the PR boundary is taking 3 grids on width and 9 grids on height which says that the 2nd condition is also met.
+
+# LEF Generation
+
+#### Task 1 -  save the modified layout 
+
+Step 1: Enter these commands in console
+```
+save sky130_vsdinv.mag
+```
+![d34](https://github.com/Pavan2280/pes_pd/assets/131603225/22f00960-8215-458f-b58e-1229ce685588)
+
+Step 2: Open the file and extract LEF by using this command.
+```
+magic -T sky130A.tch sky130_vsdinv.mag
+```
+![d45](https://github.com/Pavan2280/pes_pd/assets/131603225/ee95bb94-4736-487c-b991-df17fe6ae3df)
+
+Now enter this command inside `tkcon` console.
+```
+lef write
+```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/98435750-d31d-4b78-b6b4-21715b2e9aa0)
 
 
 [Back to Top](#top)
