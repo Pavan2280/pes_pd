@@ -466,7 +466,7 @@ Step 1: Enter this command to view `track.info` file
 ```
 less track.info
 ```
-![image](https://github.com/Pavan2280/pes_pd/assets/131603225/8988a46a-a2b7-4575-90b2-44e05e6ed64f)
+![d31](https://github.com/Pavan2280/pes_pd/assets/131603225/150d3736-8441-4604-bc32-360e61da0084)
 
 From above image we can say that 1st value indicates the offset and 2nd value indicates the pitch along provided direction.
 
@@ -476,10 +476,13 @@ Step 1: Enter this command in `tkcon` console.
 ```
 grid 0.46um 0.34um 0.23um 0.17um
 ```
+![d32](https://github.com/Pavan2280/pes_pd/assets/131603225/8130337d-373d-414d-b14f-fd05699e6f3c)
 
+Layout view after setting grid info
+![d33](https://github.com/Pavan2280/pes_pd/assets/131603225/db6e28a3-a491-43e1-b9ed-fd4f77140dbc)
 
-
-
+From the above pic, its confirmed that the pins A and Y are at the intersection of X and Y tracks. So the first condition is met.
+The PR boundary is taking 3 grids on width and 9 grids on height which says that the 2nd condition is also met
 
 
 [Back to Top](#top)
