@@ -555,7 +555,7 @@ docker
 ./flow.tcl -interactive
 ```
 
-Step 6: Make sure the lef file is added.
+Step 6: Make sure the lef file is added and enter these set of commands given below.
 ```
 package require openlane 0.9
 prep -design picorv32a -tag 16-09_09-57 -overwrite
