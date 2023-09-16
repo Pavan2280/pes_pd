@@ -356,7 +356,7 @@ git clone https://github.com/nickson-jose/vsdstdcelldesign.git
 Step 1: Open a terminal and run this command
 ```
 cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
-magic -T sky130A.tech sky130_inv.mag
+magic -T sky130A.tech sky130_inv.mag &
 ```
 After executing the command, you will have two consoles: one is the `layout` console, and the other is the `tkcon` console.
 
