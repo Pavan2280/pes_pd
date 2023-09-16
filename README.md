@@ -285,8 +285,6 @@ Transition Time = time(slew_low_rise_thr) - time(slew_high_rise_thr)
 <summary>Day 3 - Design library cell using Magic Layout and ngspice characterization</summary>
 <br>
 
-# Labs
-
 #### Task 1 - CMOS inverter ngspice simulations
 
 `cmos_inverter.cir` 
