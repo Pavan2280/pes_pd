@@ -484,7 +484,7 @@ grid 0.46um 0.34um 0.23um 0.17um
 Layout view after setting grid info
 ![d33](https://github.com/Pavan2280/pes_pd/assets/131603225/db6e28a3-a491-43e1-b9ed-fd4f77140dbc)
 
-From the above pic, its confirmed that the pins A and Y are at the intersection of X and Y tracks. So the first condition is met and the PR boundary is taking 3 grids on width and 9 grids on height which says that the 2nd condition is also met.
+From the above pic, its confirmed that the pins A and Y are at the intersection of X and Y tracks. So both conditions (The width of standard cells should be an odd multiple of the track pitch & the height of standard cells should be an odd multiple of the vertical track pitch) are met.
 
 # LEF Generation
 
