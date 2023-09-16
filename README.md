@@ -188,9 +188,10 @@ run_synthesis
 Now our aim is to find Ratio (Number of D-flip flops to Number of cells)
 #### Number of D-flip flops to Number of cells ratio = 1613/14876 (0.108 or 10.8%)
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/60b0b776-f6de-47b9-98f8-b749bb3cba04)
-</details>
 
 [Back to Top](#top)
+
+</details>
 
 <details>
 <summary>Day 2 - Good Floorplan vs Bad Floorplan and Introduction to library cells</summary>
