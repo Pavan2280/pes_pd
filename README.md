@@ -350,6 +350,16 @@ Step 1: Please execute this command within the `Desktop/work/tools/openlane_work
 git clone https://github.com/nickson-jose/vsdstdcelldesign.git
 ```
 
+Step 2: To complete the task, please copy the `sky130A.tech` which is present in this `Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic` 
+directory into this `Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign` directory by using the command given below.
+```
+cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+```
+
+![1](https://github.com/Pavan2280/pes_pd/assets/131603225/afabc5ff-0818-4616-aec6-c7434a6ea062)
+
+![2](https://github.com/Pavan2280/pes_pd/assets/131603225/9258aad7-5cd5-45cf-837b-d6ae64fd2930)
+
 #### Task 2 - Creating an Inverter Layout using Magic
 Step 1: Open a terminal and run this command
 ```
@@ -494,15 +504,6 @@ save sky130_vsdinv.mag
 ```
 ![d34](https://github.com/Pavan2280/pes_pd/assets/131603225/22f00960-8215-458f-b58e-1229ce685588)
 
-Step 2: To complete the task, please copy the `sky130A.tech` which is present in this `Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic` 
-directory into this `Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign` directory by using the command given below.
-```
-cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
-```
-
-![1](https://github.com/Pavan2280/pes_pd/assets/131603225/afabc5ff-0818-4616-aec6-c7434a6ea062)
-
-![2](https://github.com/Pavan2280/pes_pd/assets/131603225/9258aad7-5cd5-45cf-837b-d6ae64fd2930)
 
 Step 3: Next, please copy the `sky130_vsdinv.lef` which is present in this `Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign` in this
 directory into this `Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src` directory by using the command given below.
