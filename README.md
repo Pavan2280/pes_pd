@@ -494,8 +494,15 @@ save sky130_vsdinv.mag
 ```
 ![d34](https://github.com/Pavan2280/pes_pd/assets/131603225/22f00960-8215-458f-b58e-1229ce685588)
 
-Step 2: To complete the task, please copy the sky130A.tech which is present in this `Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic` directory into this `Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign` directory.
+Step 2: To complete the task, please copy the sky130A.tech which is present in this `Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic` 
+directory into this `Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign` directory by using the command given below.
+```
+cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+```
+
 ![1](https://github.com/Pavan2280/pes_pd/assets/131603225/afabc5ff-0818-4616-aec6-c7434a6ea062)
+
+![Uploading 2.png…]()
 
 
 Step 3: Open the file and extract LEF by using this command.
