@@ -565,6 +565,8 @@ run_synthesis
 ```
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/e7374ed4-c713-4a59-bda1-9aa91a2efe36)
 
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/9cc2f7aa-e5c1-4381-97ac-e5e3cc282290)
+
 
 [Back to Top](#top)
 </details>
