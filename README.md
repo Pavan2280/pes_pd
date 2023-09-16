@@ -274,6 +274,9 @@ The characterization process involves the following steps:
 Propagation Delay = time(out_thr) - time(in_thr)
 11) **Transition Time**: This is the time it takes for a signal to transition from a low to high state (rising edge) or from a high to low state (falling edge) within a specific voltage range. In this case, you are calculating the transition time from the high threshold (slew_high_rise_thr) to the low threshold (slew_low_rise_thr) during a rising edge.
 Transition Time = time(slew_low_rise_thr) - time(slew_high_rise_thr)
+
+[Back to Top](#top)
+
 </details>
 
 <details>
@@ -415,6 +418,9 @@ plot y vs time a
 2) Propagation delay is similarly determined, but it involves adjusting the points based on the definition of propagation delay.
 #### tprop = 0.034ns
 ![t_prop](https://github.com/Pavan2280/pes_pd/assets/131603225/9e396323-c6ec-4e44-9177-fe326b1a8800)
+
+[Back to Top](#top)
+
 </details>
 
 <details>
@@ -465,4 +471,10 @@ Step 1: Enter this command in `tkcon` console.
 grid 0.46um 0.34um 0.23um 0.17um
 ```
 
+
+
+
+
+
+[Back to Top](#top)
 </details>
