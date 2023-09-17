@@ -566,7 +566,8 @@ set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 run_synthesis
 ```
-![image](https://github.com/Pavan2280/pes_pd/assets/131603225/dc57552a-9b1a-4d83-9dc6-c13ab7a1a188)
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/4e69f5d0-9581-4742-8313-2f470173727c)
 
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/e7374ed4-c713-4a59-bda1-9aa91a2efe36)
 
