@@ -638,8 +638,21 @@ Step 1: Within OpenROAD, perform timing analysis by generating a `.db` database 
 8) Define clock domains.
 9) Generate timing reports to analyze the design further.
 
- ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/c9d2a76b-1eb6-48e1-be6d-92b1ce69049c)
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/c9d2a76b-1eb6-48e1-be6d-92b1ce69049c)
 
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/2cfc4f79-dd5e-4eea-84df-67d82965ce62)
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/cc27da29-c4ca-47e2-9e2a-3fd8442452be)
+
+The timing results are unlikely to meet our expectations due to the utilization of min and max library files, which OpenRoad does not currently support for multi-corner optimization. To address this, we will solely employ the typical corner library for optimization purposes.
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/e680e9d3-8938-47d4-80ae-49de5c3a77a3)
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/0a62727d-13ff-409f-beb7-f63d37d891ce)
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/80155e7c-a853-451f-980c-053bec327491)
+
+![new_!2](https://github.com/Pavan2280/pes_pd/assets/131603225/347a81d5-80cd-4641-81a4-1ea984866f55)
 
 [Back to Top](#top)
 </details>
