@@ -559,6 +559,7 @@ docker
 
 Step 6: Make sure the lef file is added and enter these set of commands given below.
 ```
+Note - "Our synthesis, conducted on September 16th at 09:57 i.e(16-09_09-57), will serve as our unique timestamp, differing for each run."
 package require openlane 0.9
 prep -design picorv32a -tag 16-09_09-57 -overwrite
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
