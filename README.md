@@ -593,7 +593,49 @@ run_synthesis
 By providing these configuration files and constraints to tools, you ensure that the tools operate correctly and optimize the design based on the specified requirements.
 In summary, managing slack and ensuring proper timing constraints are essential steps in VLSI design to guarantee that the integrated circuit operates correctly and meets its performance specifications. The use of STA tools and well-defined configuration files and constraints plays a crucial role in achieving this goal.
 
-Step 7: We need to run `run_synthesis` again after enabling CELL_SIZING and SYNTH_STRATEGY "DELAY 1," carefully monitor the synthesis results for improvements in critical path delay. Adjust these settings iteratively as needed to meet your design's performance goals.
+#### Task 3 - We need to run `run_synthesis` again 
+Step 1: Enable CELL_SIZING and set SYNTH_STRATEGY "DELAY 1," carefully monitor the synthesis results for improvements in critical path delay. Adjust these settings iteratively as needed to meet your design's performance goals.
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/73b0866d-835f-4296-8435-1192979847e7)
+
+Despite a significant reduction in slack, the timing requirements have not yet been met. This issue could be related to the constraints defined in the "my_base.sdc" file, which is specified in the "pre_sta.conf" configuration file. To address this, consider revising the constraints within "my_base.sdc" and then rerun the STA analysis using the command "sta pre_sta.conf" for further optimization.
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/de3a3a53-eb66-4d9f-8f62-9ca666aed0be)
+
+High fanout can lead to increased delay in digital circuits. To address this, you can enhance synthesis results by adjusting the SYNTH_MAX_FANOUT variable and then rerunning the synthesis process to optimize the fanout and reduce delay.
+
+Step 2: Enable cell buffering & performing manual cell replacement on our WNS path with the OpenSTA tool
+
+To improve timing on the worst negative slack (WNS) path, enable cell buffering to enhance signal propagation. Additionally, identify the primary net responsible for driving multiple outputs and consider replacing the driving cell with a larger version of the same cell type for potential performance gains.
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/fe3333cd-f309-4b89-97e9-53d4c362294e)
+
+Step 3: Optimize the fanout value with OpenLANE tool
+
+Since we successfully synthesized the core using our VSDINV cell, it should be reflected in the layout after the `run_placement` stage, which follows the `run_floorplan stage`.
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/4e67c66d-126c-4c45-a3fc-477961b36d85)
+
+#### Task 4 - Clock Tree Synthesis
+
+After addressing slack violations using the "pre_sta.conf" configuration, generate a netlist with the corrected design using "write_verilog." Subsequently, replace the original OpenLANE-generated "picorv32a.synthesis.v" file with this modified netlist to ensure the design incorporates the necessary fixes.
+
+In the OpenLANE flow, proceed with the "run_floorplan," "run_placement," and "run_cts" stages to further refine the design and ensure that the corrections made to the netlist are incorporated into the physical layout.
+
+#### Task 5 - Post CTS- STA Analysis
+
+Step 1: Within OpenROAD, perform timing analysis by generating a `.db` database file.
+1) Launch OpenRoad.
+2) Load the LEF file from the "tmp" folder in your OpenLANE runs.
+3) Load the DEF file from the CTS results.
+4) Create and save the .db database file.
+5) Load the generated .db file.
+6) Read the CTS-generated Verilog file.
+7) Import both the minimum and maximum liberty files.
+8) Define clock domains.
+9) Generate timing reports to analyze the design further.
+
+ ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/c9d2a76b-1eb6-48e1-be6d-92b1ce69049c)
 
 
 [Back to Top](#top)
