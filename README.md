@@ -536,7 +536,7 @@ cp sky130_vsdinv.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/desig
 
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/43428728-977d-456e-8748-7f9879dcb4ae)
 
-Step 3: Next, please copy the `sky130_fd_sc_hd__*` which is present in this `Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/libs` in this
+Step 3: Now we need to copy the `sky130_fd_sc_hd__*` which is present in this `Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/libs` in this
 directory into this `Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src` directory by using the command given below.
 ```
 cp sky130_fd_sc_hd__* /home/vsduser/Desktop/work/tools/openlane_working_dir/designs/picorv32a/src/
