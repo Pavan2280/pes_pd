@@ -597,6 +597,8 @@ In summary, managing slack and ensuring proper timing constraints are essential 
 #### Task 3 - We need to run `run_synthesis` again 
 Step 1: Enable CELL_SIZING and set SYNTH_STRATEGY "DELAY 1," carefully monitor the synthesis results for improvements in critical path delay. Adjust these settings iteratively as needed to meet your design's performance goals.
 
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/6229fb07-ff85-4a76-990b-cac88deee4d5)
+
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/73b0866d-835f-4296-8435-1192979847e7)
 
 Despite a significant reduction in slack, the timing requirements have not yet been met. This issue could be related to the constraints defined in the "my_base.sdc" file, which is specified in the "pre_sta.conf" configuration file. To address this, consider revising the constraints within "my_base.sdc" and then rerun the STA analysis using the command "sta pre_sta.conf" for further optimization.
