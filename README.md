@@ -566,9 +566,34 @@ set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 run_synthesis
 ```
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/dc57552a-9b1a-4d83-9dc6-c13ab7a1a188)
+
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/e7374ed4-c713-4a59-bda1-9aa91a2efe36)
 
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/9cc2f7aa-e5c1-4381-97ac-e5e3cc282290)
+
+
+#### Managing slack in Very Large Scale Integration (VLSI) design, particularly in the context of Static Timing Analysis (STA). Let me provide some additional information and clarification on the points you mentioned:
+
+1) Obtaining System Specifications: In the architecture design phase of VLSI, engineers gather system specifications that include various parameters, one of which is the required frequency of operation. This frequency is crucial for determining the overall performance of the integrated circuit.
+
+2) Static Timing Analysis (STA): STA is a critical step in VLSI design to ensure that the designed circuit meets its timing requirements. It involves analyzing the timing behavior of the circuit to ensure that signals meet setup and hold time requirements.
+
+3) Setup Timing: When referring to "pre clock tree synthesis STA analysis" and setup timing, you're concerned with ensuring that signals reach their destination registers reliably before the clock edge (setup time) to avoid setup violations.
+
+4) Worst Negative Slack (WNS) and Total Negative Slack (TNS): WNS represents the worst-case delay violation in the design, while TNS is the sum of all negative slack values across the design. These metrics help identify critical paths and areas where timing violations are occurring.
+
+5) Fixing Slack Violations: To address timing violations, designers often use STA analysis tools like OpenSTA, which is integrated into the OpenLANE tool. These tools help identify the specific violations and allow for debugging and optimization to meet timing constraints.
+
+#### Two Steps for Correct Operation of Tools:
+
+1) Design Configuration Files (.conf): These files contain tool-specific configuration settings for the design. They specify how the tools should analyze and optimize the design.
+2) Design Synopsys Design Constraint (.sdc) Files: SDC files provide industry-standard timing constraints for the design. They specify the timing requirements for various elements of the design, such as setup and hold times, clock definitions, and input/output delays.
+
+By providing these configuration files and constraints to tools, you ensure that the tools operate correctly and optimize the design based on the specified requirements.
+In summary, managing slack and ensuring proper timing constraints are essential steps in VLSI design to guarantee that the integrated circuit operates correctly and meets its performance specifications. The use of STA tools and well-defined configuration files and constraints plays a crucial role in achieving this goal.
+
+Step 7: We need to run `run_synthesis` again after enabling CELL_SIZING and SYNTH_STRATEGY "DELAY 1," carefully monitor the synthesis results for improvements in critical path delay. Adjust these settings iteratively as needed to meet your design's performance goals.
 
 
 [Back to Top](#top)
