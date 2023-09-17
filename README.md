@@ -646,5 +646,39 @@ Step 1: Within OpenROAD, perform timing analysis by generating a `.db` database 
 <summary>Day 5 - Final steps for RTL2GDSII</summary>
 <br>
 
- [Back to Top](#top)
+# Power Distribution Network
+
+After generating the clock tree network and verifying post-routing STA checks, we're ready to generate the power distribution network (PDN) in OpenLANE. The PDN feature within OpenLANE will create:
+
+1) A power ring that spans the entire core.
+2) A power halo, which is local to any preplaced cells.
+3) Power straps, facilitating power distribution to the center of the chip.
+4) Power rails dedicated to the standard cells.
+
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/3248d882-e74a-42de-b81a-08148757b896)
+
+# Global and Detailed Routing
+
+OpenLANE employs TritonRoute as the routing engine for physical design implementation, involving two key stages:
+
+1) Global Routing: This phase generates routing guides for interconnects, defining the layers and locations on the chip for each net.
+
+2) Detailed Routing: Metal traces are incrementally placed following the routing guides to physically implement the interconnects.
+
+In case of persistent Design Rule Check (DRC) errors after routing, users have two options:
+
+1) Re-run routing with higher Quality of Results (QoR) settings.
+2) Manually address and correct specific DRC errors mentioned in the TritonRoute-generated "tritonRoute.drc" file.
+
+# SPEF Extraction
+
+After completing routing, interconnect parasitics need to be extracted for sign-off post-route Static Timing Analysis (STA). These parasitics are typically extracted into a Standard Parasitic Exchange Format (SPEF) file. It's important to note that, as of now, OpenLANE does not include an integrated SPEF extractor for this purpose.
+
+#### Step 1: SPEF Extraction can be done by using these commands.
+```
+cd ~/Desktop/work/tools/SPEFEXTRACTOR
+python3 main.py <path to merged.lef in tmp> <path to def in routing>
+```
+The SPEF file will be generated in the same location as the DEF file.
+[Back to Top](#top)
 </details>
