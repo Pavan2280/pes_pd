@@ -27,6 +27,8 @@ Please follow these steps to install Openlane on your system, whether you are us
 
 4. **Verify Installation**: Confirm that Openlane is correctly installed by running a test command or checking the version.(Check Day 1 content in order to verify installation.)
 
+Please note that if you are logged out, the password is "vsdiat."
+
 </details>
 
 <a name="top"></a>
