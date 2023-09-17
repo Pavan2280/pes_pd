@@ -680,5 +680,6 @@ cd ~/Desktop/work/tools/SPEFEXTRACTOR
 python3 main.py <path to merged.lef in tmp> <path to def in routing>
 ```
 The SPEF file will be generated in the same location as the DEF file.
+
 [Back to Top](#top)
 </details>
