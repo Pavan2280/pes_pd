@@ -662,7 +662,6 @@ After generating the clock tree network and verifying post-routing STA checks, w
 OpenLANE employs TritonRoute as the routing engine for physical design implementation, involving two key stages:
 
 1) Global Routing: This phase generates routing guides for interconnects, defining the layers and locations on the chip for each net.
-
 2) Detailed Routing: Metal traces are incrementally placed following the routing guides to physically implement the interconnects.
 
 In case of persistent Design Rule Check (DRC) errors after routing, users have two options:
