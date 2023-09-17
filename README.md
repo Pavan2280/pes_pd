@@ -595,7 +595,7 @@ By providing these configuration files and constraints to tools, you ensure that
 In summary, managing slack and ensuring proper timing constraints are essential steps in VLSI design to guarantee that the integrated circuit operates correctly and meets its performance specifications. The use of STA tools and well-defined configuration files and constraints plays a crucial role in achieving this goal.
 
 #### Task 3 - We need to run `run_synthesis` again 
-Step 1: Enable CELL_SIZING and set SYNTH_STRATEGY "DELAY 1," carefully monitor the synthesis results for improvements in critical path delay. Adjust these settings iteratively as needed to meet your design's performance goals.
+Step 1: Enable STNTH_SIZING and set SYNTH_STRATEGY "DELAY 1," carefully monitor the synthesis results for improvements in critical path delay. Adjust these settings iteratively as needed to meet your design's performance goals.
 
 ![image](https://github.com/Pavan2280/pes_pd/assets/131603225/6229fb07-ff85-4a76-990b-cac88deee4d5)
 
