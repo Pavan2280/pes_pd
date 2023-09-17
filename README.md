@@ -558,8 +558,7 @@ docker
 ```
 
 Step 6: Make sure the lef file is added and enter these set of commands given below.
-#### Note - "Our synthesis, conducted on a perticular day and time, will serve as our unique timestamp, differing for each run."
-#### Replace "unique_timestamp" with your actual unique timestamp
+#### Note - "Our synthesis, conducted on a perticular day and time, will serve as our unique timestamp, differing for each run so replace "unique_timestamp" with your actual unique timestamp.
 ```
 package require openlane 0.9
 prep -design picorv32a -tag unique_timestamp -overwrite
