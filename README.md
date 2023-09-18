@@ -617,7 +617,7 @@ Step 3: Optimize the fanout value with OpenLANE tool
 
 Since we successfully synthesized the core using our VSDINV cell, it should be reflected in the layout after the `run_placement` stage, which follows the `run_floorplan stage`.
 
-![image](https://github.com/Pavan2280/pes_pd/assets/131603225/4e67c66d-126c-4c45-a3fc-477961b36d85)
+![image](https://github.com/Pavan2280/pes_pd/assets/131603225/3114bc3e-ae62-49ed-92df-011e81706ce0)
 
 #### Task 4 - Clock Tree Synthesis
 
